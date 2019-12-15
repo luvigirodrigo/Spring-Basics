@@ -22,10 +22,6 @@ public abstract class Vehicle implements Comparable<Vehicle>, Cloneable, Seriali
 	@Column(name = "VEHICLE_ID")
 	private int vehicleId;
 
-	// private Make make;
-
-	// private Model model;
-
 	public int getVehicleId() {
 		return vehicleId;
 	}
