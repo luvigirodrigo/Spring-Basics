@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -21,7 +22,10 @@ public abstract class Vehicle implements Comparable<Vehicle>, Cloneable, Seriali
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "VEHICLE_ID")
 	private int vehicleId;
-
+	
+//	@OneToOne
+//	private RegistrationRecord registrationRecord;
+	
 	public int getVehicleId() {
 		return vehicleId;
 	}
